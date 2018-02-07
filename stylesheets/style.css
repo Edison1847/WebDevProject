@@ -1,0 +1,178 @@
+/*************************************************
+LANDING PAGE
+************************************************/
+/*Background*/
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom left, #355772, #8cad80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Modal*/
+.outerContainer{
+    width: 75%;
+    height: 75vh;
+    background: linear-gradient(to top left, #1b6379, #94b2b9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*Add shadow effect*/
+    box-shadow: 0 6px 12px 6px rgba(0, 0, 0, 0.2), 0 8px 25px 20px rgba(0, 0, 0, 0.1);
+
+
+    /*Adjusting the position*/
+
+    /*Adjust innerContainer position to left-canter*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+
+}
+.innerContainer{
+    padding-left: 7%;
+    width: 45%;
+    z-index: 10;
+    position: absolute;
+}
+hr{
+    margin: 0;
+    width: 75%;
+    border-color: #cecece;
+    background-color: #cecece;
+    border-top: #cecece;
+}
+input{
+    border: none;
+    width: 75%;
+    background: transparent;
+    margin: 0;
+    padding-bottom: 6px;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+
+.innerContainer h3{
+    width: 200px%;
+    font-size: 60px;
+    padding-bottom: 8%;
+    margin: 0;
+    color: #cecece;
+    font-family: "Roboto Light";
+    font-weight: lighter;
+
+}
+p{
+    margin: 0;
+    padding-top: 6px;
+    color: #cecece;
+}
+::placeholder {
+    font-family: Gruppo;
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+}
+.inputGroup{
+    padding: 10px 0;
+}
+.keepLoggedIn{
+padding-top: 20px;
+}
+.keepLoggedIn input{
+    width: 15px;
+    padding: 0;
+    margin: 0;
+}
+span {
+    color: #a0a0a0;
+}
+.button{
+    background-color: #8cad80;
+    margin: 20px  0 40px 0;
+    width: 35%;
+    padding: 10px 0;
+}
+
+
+/******** CHECKBOX STYLING *************/
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+.keepLoggedIn{
+    width: 25px;
+    height: 5px;
+    background: #ddd;
+    margin: 20px 90px 20px 0;
+
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+.keepLoggedIn label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+
+    background: #cecece;
+    box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.keepLoggedIn input[type=checkbox]:checked + label {
+    background: #8cad80;
+}
+
+/******************************************/
+
+
+/*input[type="checkbox"]:checked {*/
+
+    /*background-color: darkolivegreen;*/
+/*}*/
+
+
+.submitGroup{
+    padding-top: 20px;
+}
+
+#userName:active , #userName:hover{
+    background-color: #8cad80;
+}
+input[type=submit] {
+    padding: 15px 0 15px 0;
+    width: 40%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+h4{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    bottom: 97px;
+    left: 40px;
+    color: #cecece;
+}
+img{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    left: 135px;
+}
