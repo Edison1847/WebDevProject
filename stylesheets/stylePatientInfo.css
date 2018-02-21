@@ -1,0 +1,294 @@
+/*Adding background colors to main elements*/
+header{
+    background-color: #6d6e68;
+}
+.interHead{
+    background-color: #a5a6a0;
+}
+.verticalBar{
+    background-color: #a7a8a2;
+}
+
+
+/* Adjusting icon /img size */
+.topIcon img{
+    width: 80px;
+    height: 32px;
+}
+/* Adjusting logo size */
+ .verticalBar .logo img{
+    width: 96px;
+    height:135px;
+}
+
+
+/*adjusting size of layout blocks */
+body{
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    position: relative;
+    min-height: 100%;
+}
+.verticalBar {
+    width: 23%;
+    position: absolute;
+    left: 50px;
+    margin: 4% 0 0 0;
+
+}
+.ptInfoHeader{
+    height: 22vh;
+}
+/*Adjusting right side main paragraph block*/
+.para{
+    display: block;
+    width: 65%;
+    margin-left: 35%;
+
+}
+.interHead{
+    height: 25px;
+    display: flex;
+    align-content: center;
+    margin: 30px 0 20px 0;
+
+}
+#interHead{
+    height: 15px;
+    margin: auto 0;
+}
+
+.footerInfo{
+    margin-top: 2.5%;
+    background-color: #6d6e68;
+    height: 50px;
+    color: lightgray;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+/*aligning contents of blocks */
+
+.ptInfoHeaderInner {
+
+    margin-left: 15%;
+    padding-top: 20px;
+}
+.contentAlignCenter{
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 0;
+
+
+
+}
+
+footer p{
+    margin: auto 0;
+    padding: 0;
+    height: 15px;
+}
+/*align Vertical bar */
+.verticalBar .logo img{
+    margin: 20px 0 0 0;
+}
+.verticalBar h4, .verticalBar h5{
+    margin: 5px 0 0 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.verticalBar h3{
+    margin: 35px 0 -10px 20px;
+    font-size: 14px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+.verticalBar .pAlign{
+    margin: 10px  0 10px 0;
+    width: 90px;
+}
+.lowerInnerGroup{
+    display: flex;
+    align-content: flex-start;
+}
+main section .lowerInnerGroup .lowerSpan{
+    margin-left: 0;
+    margin-right: 0;
+}
+.ptInfoHeaderInner h1{
+    margin: 15px 0;
+}
+
+
+/* adjusting icon size */
+.verticalBar span{
+    height: 20px;
+    margin: auto 15px;
+    font-size: 12px;
+}
+.verticalBar  img{
+    height: 20px;
+    width: 20px;
+    margin: 10px 0 10px 20px;
+}
+.verticalBar .innerGroup{
+    margin: 0 0 0 40px;
+    display: flex;
+    align-content: flex-start;
+}
+
+
+
+/* Font styling */
+.verticalBar{
+    color: #F8F8F8 ;
+}
+.verticalBar .lowerInnerGroup{
+    margin: 10px auto;
+}
+.verticalBar .lowerInnerGroup .pAlign{
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.verticalBar .lowerInnerGroup span{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.lowerInnerGroup #loInEmail, .lowerInnerGroup #loInTell{
+    width: 65px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.verticalBar #lowerSpanAddress{
+    font-size: 10px;
+
+}
+.ptInfoHeaderInner h1, h2{
+    color: #e8e9e3;
+}
+.ptInfoHeaderInner h1{
+    font-size: 28px;
+    font-family: "Oxygen";
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.ptInfoHeaderInner h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+main .para .upperSection{
+    color: #C0C0C0;
+}
+main .para .upperSection h4{
+    font-weight: bolder;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Oxygen;
+    margin-bottom: 0;
+}
+main .para .interHead{
+        color: #F0F0F0;
+    font-size:  16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Oxygen;
+    padding: 0 0 5px 0;
+    display: flex;
+    align-content: center;
+
+}
+.alignPara{
+    display: flex;
+    align-content: flex-start;
+    margin: 0 0;
+}
+.alignPara{
+    display: flex;
+    align-content: flex-start;
+    margin: 0 0;
+} p{
+    margin: 8px 0;
+  }
+#tableDiv{
+    margin: 10px auto;
+}
+/*Edit Profile Edit History*/
+.para #editContent h5{
+    margin: -8px 0 -8px 0;
+
+    font-weight: lighter;
+    color: #C0C0C0;
+}
+/*Style Buttons*/
+#lowerButtonsInfo form{
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+}
+#lowerButtonsInfo a , #queueSubmitId{
+    margin: 35px 5px 0 5px;
+    background-color: #4fba6f;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2), 0 1px 5px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    border: 0;
+    text-decoration: none;
+
+}
+#lowerButtonsInfo #queueSubmitId:focus,#lowerButtonsInfo #queueSubmitId:hover{
+    background-color: transparent;
+    color: #4fba6f;
+    border: #4fba6f 1px solid;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.para #lowerButtonsInfo form a:focus, .para #lowerButtonsInfo form a:hover{
+    background-color: transparent;
+    color: #4fba6f;
+    border: #4fba6f 1px solid;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+
+/* Final retouch */
+.ptInfoMain{
+    width: 65%;
+    margin: 35px auto;
+}
+.patientInfo{
+    background-color: #f4f9fc;
+}
+main{
+    background-color: white;
+    box-shadow: -1px 2px 72px 19px rgba(0,0,0,0.25);
+}
+#lowerSpanEmail{
+    text-transform: lowercase;
+}
+/*Style table heads*/
+body main .para .lowerSection table thead tr th{
+    font-size: 12px;
+    padding: 5px 7px;
+}
+body main .para .lowerSection #myTable tbody tr td{
+    font-size: 12px;
+    line-height: 15px;
+}
+

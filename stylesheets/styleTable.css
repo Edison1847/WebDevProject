@@ -1,0 +1,160 @@
+/* Style Table */
+table,tr,td,th{
+    border: none;
+    text-align: center;
+}
+table {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+    border-radius: 2px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Style table heading row*/
+table th {
+    background: #4fba6f;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+/*Remove White space of cells and adjusting width*/
+th,td{
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+
+/*Styling Buttons*/
+input[type="button"] {
+    transition: all .3s;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/*Style table rows*/
+tr:hover:not(th) {
+    background-color: #D8D8D8;
+}
+input[type="button"]:not(.active) {
+    background-color:transparent;
+    color: #cecece;
+}
+.active {
+    background-color: #4fba6f;
+    color :#fff;
+}
+input[type="button"]:hover:not(.active) {
+    background-color: #ddd;
+    color: white;
+}
+#buttons{
+    margin: auto;
+}
+#tableButtons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*Adding background color to every other row*/
+tr:nth-child(odd) {
+    background-color: #E8E8E8 ;
+}
+
+
+#tableDiv{
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    }
+
+/*Adding gray background*/
+#searchAndTable{
+    background-color: #efefef;
+    width: 98%;
+    height: 92vh;
+    margin: 15px auto;
+}
+/*Styling Add Delete and Edit and Delete*/
+#add img, #edit img, #delete img #realAdd img{
+    height: 10px;
+    width: 10px;
+    margin: 10px 3px 0 3px;
+    cursor: pointer;
+
+}
+#myTable #realAdd input[type=submit]{
+    border: none;
+    background: url('../stylesheets/images/realAdd.png') no-repeat top left;
+    background-size: 12px 12px;
+    padding: 2px 8px;
+    height: 20px;
+    width: 20px;
+    margin: 0 -10px;
+    cursor: pointer;
+    outline: none;
+    background-position:0 6px;
+}
+#myTable #add input[type=submit]{
+border: none;
+background: url('../stylesheets/images/add.png') no-repeat top left;
+    background-size: 12px 12px;
+padding: 2px 8px;
+    height: 20px;
+    width: 20px;
+    margin: 0 -5px;
+    cursor: pointer;
+    outline: none;
+    background-position:0 6px;
+}
+#myTable #add,#myTable #edit,#myTable #delete, #myTable #realAdd   {
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    display: inline-flex;
+}
+#myTable #edit input[type=submit]{
+    border: none;
+    background: url('../stylesheets/images/Editor.png') no-repeat top left;
+    background-size: 12px 12px;
+    padding: 2px 8px;
+    height: 20px;
+    width: 20px;
+    margin: 0 0;
+    cursor: pointer;
+    outline: none;
+    background-position:0 6px;
+}
+#myTable #delete input[type=submit]{
+    border: none;
+    background: url('../stylesheets/images/delete.png') no-repeat top left;
+    background-size: 12px 12px;
+    padding: 2px 8px;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+    background-position:0 6px;
+}
+#myTable #formQueueId{
+    background-color: red;
+}
+#myTable #add input[type=submit]:hover,#myTable #realAdd input[type=submit]:hover,#myTable #edit input[type=submit]:hover,#myTable #delete input[type=submit]:hover{
+    background-size: 14px 14px;
+}

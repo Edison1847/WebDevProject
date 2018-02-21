@@ -1,0 +1,126 @@
+#loginBody  {
+
+    background: url('../stylesheets/images/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    background-attachment: fixed;
+
+}
+#loginBody, html  {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("11.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#loginBody .container {
+    position:absolute;
+    width: 47%;
+    top: 11%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#loginBody .container .centered .image {
+    opacity: 0;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#loginBody .container:hover .image {
+    opacity: .2;
+}
+
+#loginBody .container:hover .middle {
+    opacity: .1;
+}
+
+.text {
+    background-color: #0FF;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+#loginBody .container .centered input[type=text],#loginBody .container .centered input[type=password] {
+    width: 72%;
+    padding: 3% 4%;
+    margin: 1% 0;
+    box-sizing: border-box;
+    border: 2px #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 12px;
+    align: left;
+    opacity:0.4;
+    color:#000;
+
+
+
+}
+#loginBody .container .centered .button {
+    background-color:#CCC;
+    border: none;
+    color: #FFF;
+    padding: 3% 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 3% 2%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity:0.4;
+
+}
+
+#loginBody .container .centered .button1 {
+    background-color: #FFF;
+    color: black;
+    border: 2px solid #E3E3E3;
+    outline: none;
+}
+
+#loginBody .container .centered .button1:hover {
+    background-color: lightgray;
+    color: #999;
+    outline: none;
+}
+#loginBody .container .centered .center {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#loginBody .container .centered {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 45%;
+    text-align: center;
+    font-size: 18px;
+
+}
+#loginBody .container .centered input[type='text']::placeholder {
+    color: #003;
+    opacity: 1; /* Firefox */
+}
+#loginBody .container .centered input[type='password']::placeholder {
+    color: #003;
+    opacity: 1; /* Firefox */
+}

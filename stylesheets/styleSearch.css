@@ -1,0 +1,193 @@
+/*Sizeing search icon*/
+
+.tableSearch .tableSearchInnerContainer img{
+
+    max-width: fit-content;
+    left: 50px;
+    height: 72%;
+    /* width: 100%; */
+    position: absolute;
+    /* top: 50%; */
+    z-index: 5;
+
+    /* z-index: 1; */
+    color: white;
+
+
+}
+
+/*Sizeing search bar*/
+.tableSearch .tableSearchInnerContainer input[type=search]{
+
+    width: 6%;
+    margin: 0 0 0 8px;
+    background: transparent;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 0 5px 45px;
+    transition: width .55s ease;
+}
+
+
+.tableSearch .tableSearchInnerContainer .icon{
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+.tableSearch .tableSearchInnerContainer , .tableSearchInnerContainerGroup{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.tableSearchInnerContainerGroup{
+    margin-left: 5px;
+    position: relative;
+}
+
+/*get rid of glow on hover/focus/active status*/
+
+
+.tableSearch .tableSearchInnerContainer input[type=search]:hover ,
+.tableSearch .tableSearchInnerContainer input[type=search]:focus,
+.tableSearch .tableSearchInnerContainer input[type=search]:active
+{
+        outline:none;
+        background: 	#ffffff ;
+        color: #1b6379;
+        width: 60%;
+}
+.tableSearchInnerContainer{
+    margin: 0 auto;
+}
+form{
+    width: 100%;
+
+}
+
+
+
+
+
+
+/*Styling Header*/
+
+/******************Arranging Header********************/
+html{
+    margin: 0;
+    width: 100%;
+
+}
+#formBody{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/*Size of logo*/
+header .headerImg{
+    margin: 0;
+    width: 50px;
+}
+#headerImgDiv{
+    width: 100%;
+}
+header div img{
+    width: 100%;
+}
+/*arrange head lines*/
+#formBody header{
+
+    display: flex;
+    align-content: center;
+}
+#searchHeader{
+    background-color: transparent;
+}
+
+/******************Arranging Menu********************/
+#homeBody{
+    margin: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+section .outerContent .innerContent {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+#menuOne {
+    width: 8%;
+    margin: 0 0 0 100px;
+
+
+}
+#menuTwo{
+    width: 3%;
+    margin: 0 0 0 65px;
+}
+.outerContent .innerContent{
+    height: 40px;
+}
+.outerContent{
+    margin-top: -35px;
+}
+.innerContent h5{
+    padding: 0;
+    margin: 10px 0 0 0 ;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/*Arranging Links*/
+
+/*styling menu*/
+hr{
+    visibility: hidden;
+}
+
+.styleReg:link { font-weight: bold; text-decoration: none; color: lightgray; }
+.styleReg:hover { font-weight: bold; text-decoration: none; color: lightgray; }
+.styleReg:visited { font-weight: bold; text-decoration: none; color: #4fba6f; }
+.styleReg:visited:hover { font-weight: bold; text-decoration: none; color: darkgrey; }
+
+.styleView:link { font-weight: bold; text-decoration: none; color: lightgray; }
+.styleView:hover { font-weight: bold; text-decoration: none; color: lightgray; }
+.styleView:visited { font-weight: bold; text-decoration: none; color: #808080; }
+.styleView:visited:hover { font-weight: bold; text-decoration: none; color: #4fba6f; }
+
+.innerContent a {
+    display: inline-block;
+    position: relative;
+}
+.innerContent a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+
+    width: 100%;
+    border-bottom: 2px solid;
+    margin-top: -1px;
+}
+/*styling sorted search*/
+fieldset{
+    margin: 0 0 20px 0;
+    padding: 2px 40px;
+    /*width: 63%;*/
+    float: left;
+    height: 65px;
+
+    border: 1px darkgrey solid;
+}
+form fieldset legend{
+    margin-left: -550px;
+    color: darkgrey;
+}
+#genderMale label, #genderFemale label, #genderOther label{
+    font-size: 13px;
+    margin-bottom: 7px;
+}
