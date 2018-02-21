@@ -1,7 +1,5 @@
 /*Sizeing search icon*/
-
 .tableSearch .tableSearchInnerContainer img{
-
     max-width: fit-content;
     left: 50px;
     height: 72%;
@@ -12,13 +10,10 @@
 
     /* z-index: 1; */
     color: white;
-
-
 }
 
 /*Sizeing search bar*/
 .tableSearch .tableSearchInnerContainer input[type=search]{
-
     width: 6%;
     margin: 0 0 0 8px;
     background: transparent;
@@ -30,7 +25,6 @@
     padding: 5px 0 5px 45px;
     transition: width .55s ease;
 }
-
 
 .tableSearch .tableSearchInnerContainer .icon{
     width: 25px;
@@ -49,8 +43,6 @@
 }
 
 /*get rid of glow on hover/focus/active status*/
-
-
 .tableSearch .tableSearchInnerContainer input[type=search]:hover ,
 .tableSearch .tableSearchInnerContainer input[type=search]:focus,
 .tableSearch .tableSearchInnerContainer input[type=search]:active
@@ -67,11 +59,6 @@ form{
     width: 100%;
 
 }
-
-
-
-
-
 
 /*Styling Header*/
 
@@ -113,7 +100,6 @@ header div img{
     width: 100%;
     background-color: #f8f8f8;
 }
-
 section .outerContent .innerContent {
     display: flex;
     justify-content: center;
@@ -123,8 +109,6 @@ section .outerContent .innerContent {
 #menuOne {
     width: 8%;
     margin: 0 0 0 100px;
-
-
 }
 #menuTwo{
     width: 3%;
@@ -142,13 +126,12 @@ section .outerContent .innerContent {
     font-size: 15px;
     text-transform: uppercase;
 }
-/*Arranging Links*/
 
 /*styling menu*/
 hr{
     visibility: hidden;
 }
-
+/*Styling link buttons*/
 .styleReg:link { font-weight: bold; text-decoration: none; color: lightgray; }
 .styleReg:hover { font-weight: bold; text-decoration: none; color: lightgray; }
 .styleReg:visited { font-weight: bold; text-decoration: none; color: #4fba6f; }
@@ -187,6 +170,7 @@ form fieldset legend{
     margin-left: -550px;
     color: darkgrey;
 }
+/**style gender label**/
 #genderMale label, #genderFemale label, #genderOther label{
     font-size: 13px;
     margin-bottom: 7px;

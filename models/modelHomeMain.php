@@ -1,4 +1,4 @@
-<?php require 'header.php';?>
+<?php require '../views/partials/header.php';?>
 
 <?php
 

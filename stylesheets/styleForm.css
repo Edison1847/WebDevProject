@@ -77,6 +77,7 @@ section .outerContent .innerContent {
 .outerContent{
     margin-top: -35px;
 }
+/*Style inner content*/
 .innerContent h5{
     padding: 0;
     margin: 10px 0 0 0 ;
@@ -142,10 +143,6 @@ body .container input{
     box-shadow: 0 0 0;
     outline: none;
 }
-
-
-
-
 
 /* styling title drop down*/
 form #title{
@@ -245,7 +242,7 @@ input[type="date"]:focus{
     box-shadow: 0 0 0;
     outline: none;
 }
-/*styling Gender input radio buttons*/
+/***********styling Gender input radio buttons**************/
 
 form ul{
     margin: 9px 0 0 -40px;
@@ -334,11 +331,34 @@ form li{
     padding: 40px 0;
     border-radius: 4px;
 }
-/**/
+/**********Style other inputs*******************/
+input[type=text], select, textarea{
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=date], select{
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=text], select, input[type=number]{
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
 
 
-
-/*styling labels*/
+/*************styling labels***************/
 .container .mylabel{
     color: 	#808080;
     text-transform: uppercase;
@@ -470,7 +490,10 @@ form li{
 .validateLabelsIn label{
     font-size: 10px;
 }
-
+label {
+    padding: 5px 5px 12px 0;
+    display: inline-block;
+}
 
 /*************Style search iocns******************/
 form #searchPtId #idSearch{
@@ -481,9 +504,6 @@ form #searchPtId #idSearch{
     display: flex;
     justify-content: flex-start;
 }
-
-
-
 div.container {
     width: 100%;
 }
@@ -496,56 +516,16 @@ div.box {
     width: 75%;
     float: left;
 }
-input[type=text], select, textarea{
-    width: 30%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-input[type=date], select{
-    width: 30%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-}
-input[type=text], select, input[type=number]{
-    width: 30%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-}
-
-
-label {
-    padding: 5px 5px 12px 0;
-    display: inline-block;
-}
-
-
-
-
-
+/****************Style standard columns and row sizes***************************************/
 .container {
     border-radius: 5px;
-
-
     padding: 15px;
-
-
 }
-
 .col-25 {
     float: left;
     width: 20%;
     margin-top: 5px;
 }
-
 .col-75 {
     float: left;
     width: 80%;

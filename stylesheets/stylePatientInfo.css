@@ -42,6 +42,7 @@ main{
 .ptInfoHeader{
     height: 22vh;
 }
+
 /*Adjusting right side main paragraph block*/
 .para{
     display: block;
@@ -85,9 +86,6 @@ footer{
     justify-content: center;
     align-content: center;
     bottom: 0;
-
-
-
 }
 
 footer p{
@@ -95,6 +93,7 @@ footer p{
     padding: 0;
     height: 15px;
 }
+
 /*align Vertical bar */
 .verticalBar .logo img{
     margin: 20px 0 0 0;
@@ -207,6 +206,7 @@ main .para .interHead{
     align-content: center;
 
 }
+/******Align paragraphs******/
 .alignPara{
     display: flex;
     align-content: flex-start;

@@ -1,5 +1,5 @@
 /*************************************************
-LANDING PAGE
+                 LANDING PAGE
 ************************************************/
 /*Background*/
 #landingBody {
@@ -13,7 +13,7 @@ LANDING PAGE
     justify-content: center;
 }
 
-/*Modal*/
+/*Modal -  adjust  size background content*/
 .outerContainer{
     width: 75%;
     height: 75vh;
@@ -22,19 +22,12 @@ LANDING PAGE
     background-attachment: fixed;
     /*Add shadow effect*/
     box-shadow: 0 6px 12px 6px rgba(0, 0, 0, 0.2), 0 8px 25px 20px rgba(0, 0, 0, 0.1);
-
-
     /*Adjusting the position*/
-
-    /*Adjust innerContainer position to left-canter*/
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-
-
-
 }
+/*Adjust innerContainer position*/
 .innerContainer{
     padding-left: 7%;
     width: 45%;
@@ -48,6 +41,7 @@ hr{
     background-color: #cecece;
     border-top: #cecece;
 }
+/*style input fields*/
 input{
     border: none;
     width: 75%;
@@ -59,7 +53,68 @@ input{
 input:focus{
     outline: none;
 }
+::placeholder {
+    font-family: Gruppo;
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+}
+.submitGroup{
+    padding-top: 20px;
+}
 
+#userName input[type=text], #passWord input[type=text]{
+    color: #84b364;
+}
+
+.inputColor input[type=text]::placeholder{
+    color: greenyellow;
+}
+
+input[type=submit] {
+    padding: 15px 0 15px 0;
+    width: 40%;
+    margin: 0 0 10px 0;
+}
+.inputGroup{
+    padding: 10px 0;
+}
+.keepLoggedIn{
+padding-top: 20px;
+}
+.keepLoggedIn input{
+    width: 15px;
+    padding: 0;
+    margin: 0;
+}
+/*Adjusting size of username input field*/
+#userName{
+    width: 65%;
+}
+
+/*Style button animation*/
+input[type=submit]:hover,input[type=submit]:focus {
+    background-color: transparent;
+    border: 2px #8cad80 solid;
+    color: #8cad80;
+    font-size: large;
+    text-transform: uppercase;
+}
+/************Strike Gender******************/
+#searchGender label{
+    text-decoration: line-through;
+}
+span {
+    color: #a0a0a0;
+}
+/*Style Buttons*/
+.button{
+    background-color: #8cad80;
+    margin: 20px  0 40px 0;
+    width: 35%;
+    padding: 10px 0;
+}
+/*style paragraphs and headings*/
 .innerContainer h3{
     width: 200px%;
     font-size: 60px;
@@ -78,33 +133,15 @@ p{
     padding-top: 6px;
     color: #cecece;
 }
-::placeholder {
-    font-family: Gruppo;
-    color: white;
-    letter-spacing: 2.5px;
-    font-size: 14px;
-}
-.inputGroup{
-    padding: 10px 0;
-}
-.keepLoggedIn{
-padding-top: 20px;
-}
-.keepLoggedIn input{
-    width: 15px;
-    padding: 0;
+h4{
+    position: relative;
+    z-index: 1;
     margin: 0;
+    padding: 0;
+    bottom: 97px;
+    left: 40px;
+    color: #cecece;
 }
-span {
-    color: #a0a0a0;
-}
-.button{
-    background-color: #8cad80;
-    margin: 20px  0 40px 0;
-    width: 35%;
-    padding: 10px 0;
-}
-
 
 /******** CHECKBOX STYLING *************/
 
@@ -143,40 +180,7 @@ input[type=checkbox] {
 }
 
 /******************************************/
-
-
-/*input[type="checkbox"]:checked {*/
-
-    /*background-color: darkolivegreen;*/
-/*}*/
-
-
-.submitGroup{
-    padding-top: 20px;
-}
-
-#userName input[type=text], #passWord input[type=text]{
-    color: #84b364;
-}
-
-.inputColor input[type=text]::placeholder{
-    color: greenyellow;
-}
-
-input[type=submit] {
-    padding: 15px 0 15px 0;
-    width: 40%;
-    margin: 0 0 10px 0;
-}
-h4{
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    bottom: 97px;
-    left: 40px;
-    color: #cecece;
-}
+/*Style main image*/
 img{
     height: 100%;
     width: 85%;
@@ -185,22 +189,4 @@ img{
     float: right;
     left: 15%;
 }
-/*Adjusting size of username input field*/
-#userName{
-    width: 65%;
-}
 
-/*Style button animation*/
-input[type=submit]:hover,input[type=submit]:focus {
-    background-color: transparent;
-    border: 2px #8cad80 solid;
-    color: #8cad80;
-    font-size: large;
-    text-transform: uppercase;
-
-}
-/************Strike Gender******************/
-#searchGender label{
-    text-decoration: line-through;
-}
-/********************Del and Clinic Queue buttons***************************/
