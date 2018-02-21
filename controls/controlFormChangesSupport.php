@@ -36,7 +36,7 @@
 
 
 
-    require 'dbConnect.php';
+    require '../models/dbConnect.php';
     $queryClinicLastDate = "SELECT clinic_dateTime FROM patient_clinic ORDER BY clinic_ID DESC LIMIT 1;";
     $resultClinicLastDate = mysqli_query($db, $queryClinicLastDate) or die(mysqli_error($db));
 

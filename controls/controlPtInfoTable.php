@@ -1,6 +1,6 @@
 <?php
 
-require 'dbConnect.php';
+require '../models/dbConnect.php';
 $queryClinicQueue= "SELECT clinic_no,clinic_dateTime,clinic_priority,user_ID FROM patient_clinic WHERE patient_ID = '$patient_Id' ORDER BY 'clinic_dateTime' ASC";
 $resultClinicQueue = mysqli_query($db,$queryClinicQueue) or die(mysqli_error($db)) ;
 

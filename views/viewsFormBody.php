@@ -44,7 +44,7 @@
                         echo $patient_Id;
                     }
                     else{
-                        require 'dbConnect.php';
+                        require '../models/dbConnect.php';
                         $query = "SELECT patient_ID FROM patient_info ORDER BY patient_ID DESC LIMIT 1;";
                         $result = mysqli_query($db, $query) or die(mysqli_error($db));
 
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-75">
         <textarea id="subject" name="subject" placeholder="......" ><?php if(isset($_POST['submitEdit'])){echo $patient_remarks;}elseif((isset($_POST['buttonQueueSubmit']))|| (isset($_POST['submitAdd']))) {
-                require 'dbConnect.php';
+                require '../models/dbConnect.php';
                 $queryClinic = "SELECT clinic_no FROM patient_clinic ORDER BY clinic_ID DESC LIMIT 1;";
                 $resultClinic = mysqli_query($db, $queryClinic) or die(mysqli_error($db));
 

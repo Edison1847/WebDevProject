@@ -2,7 +2,7 @@
 //get info of submitted ID
 if(isset($_POST['submitInfo'])) {
     $edit = $_POST['info'];
-    require 'dbConnect.php';
+    require '../models/dbConnect.php';
     $query = "SELECT patient_ID,patient_title,patient_firstName,patient_middleName,patient_lastName,patient_gender,patient_dob,patient_nic,patient_street,patient_village,patient_district,patient_homeTell,patient_mobileTell,patient_email FROM patient_info WHERE patient_ID='$edit'";
     $result = mysqli_query($db, $query) or die(mysqli_error($db));
     $resultForSearch = mysqli_query($db, $query) or die(mysqli_error($db));

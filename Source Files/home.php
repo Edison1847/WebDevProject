@@ -8,7 +8,7 @@ if($_SESSION['loggedin'] == TRUE) {
     require '../views/viewsHomeLowerBody.php';
     require '../controls/controlHomeDelete.php';
     require '../controls/controlHomeSupport.php';
-    require 'footer.php';
+    require '../views/partials/footer.php';
 }
 ?>
 

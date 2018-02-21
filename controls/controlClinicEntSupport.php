@@ -1,3 +1,4 @@
+<!--submit form on press enter-->
 <script>
     var fireRadioToday = document.getElementById("today");
     fireRadioToday.addEventListener("click", function (e) {
@@ -14,7 +15,6 @@
 
     });
 
-
     var fireRadioGivenDate = document.getElementById("sortDate");
     fireRadioGivenDate.addEventListener("keydown", function (e) {
 
@@ -24,6 +24,5 @@
     });
 
 </script>
-
 </body>
 </html>

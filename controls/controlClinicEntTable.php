@@ -1,5 +1,5 @@
 <?php
-require 'dbConnect.php';
+require '../models/dbConnect.php';
 
 if (isset($_POST['when'])) {
     if ($_POST['when'] == 'all') {

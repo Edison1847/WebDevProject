@@ -5,7 +5,7 @@ if($_SESSION['loggedin'] == TRUE){
     require '../views/viewsDelEntMain.php';
     require '../controls/controlDelEntTable.php';
     require '../views/viewsDelEntButtons.php';
-    require 'footer.php';
+    require '../views/partials/footer.php';
     }
 ?>
 

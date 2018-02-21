@@ -3,7 +3,7 @@ if(isset($_POST['submitEdit'])) {
 
     $edit = $_POST['edit'];
 
-    require 'dbConnect.php';
+    require '../models/dbConnect.php';
     $query = "SELECT patient_ID,patient_title,patient_firstName,patient_middleName,patient_lastName,patient_gender,patient_dob,patient_nic,patient_street,patient_village,patient_district,patient_homeTell,patient_mobileTell,patient_email,patient_remarks FROM patient_info WHERE patient_ID='$edit'";
     $result = mysqli_query($db, $query) or die(mysqli_error($db));
     $resultForSearch = mysqli_query($db, $query) or die(mysqli_error($db));
@@ -37,7 +37,7 @@ if(isset($_POST['submitEdit'])) {
 
 }
 if(isset($_POST['updateSubmit'])) {
-    require 'dbConnect.php';
+    require '../models/dbConnect.php';
     $tempPtId = $_POST['clinicNo'];
     $tempFinalPtId = substr($tempPtId, 5);
     $query = "SELECT patient_ID,patient_title,patient_firstName,patient_middleName,patient_lastName,patient_gender,patient_dob,patient_nic,patient_street,patient_village,patient_district,patient_homeTell,patient_mobileTell,patient_email FROM patient_info WHERE patient_ID='$tempFinalPtId'";
@@ -130,7 +130,7 @@ if(isset($_POST['updateSubmit'])) {
 if((isset($_POST['buttonQueueSubmit'])) || (isset($_POST['submitAdd']))) {
 
 
-    require 'dbConnect.php';
+    require '../models/dbConnect.php';
     if(isset($_POST['buttonQueueSubmit'])) {
         $tempPtId = $_POST['queueSubmit'];
     }else
@@ -176,7 +176,7 @@ if((isset($_POST['updateSubmitNew'])) || (isset($_POST['updateSubmitNewQueue']))
 
     if(isset($_POST['updateSubmitNew'])){
 
-        require 'dbConnect.php';
+        require '../models/dbConnect.php';
         $userIdLevel = 1;
         //get changed values
         $newTitle = $_POST['title'];
@@ -199,7 +199,7 @@ if((isset($_POST['updateSubmitNew'])) || (isset($_POST['updateSubmitNewQueue']))
         mysqli_close($db);
     }else {
 
-        require 'dbConnect.php';
+        require '../models/dbConnect.php';
 
 
         echo $_POST['subject'];

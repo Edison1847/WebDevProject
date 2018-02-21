@@ -1,5 +1,5 @@
 <?php
-require 'dbConnect.php';
+require '../models/dbConnect.php';
 
 $query= "SELECT patient_ID, concat(patient_title, ' ' , patient_firstName, ' ', patient_middleName, ' ',patient_lastName) AS patient_Name,  patient_gender,patient_dob,patient_nic,concat(patient_street, ' ' , patient_village, ' ', patient_district) AS patient_address,  patient_homeTell,patient_mobileTell,patient_email FROM patient_info WHERE patient_softDelete = '1'";
 

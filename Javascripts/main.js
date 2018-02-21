@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function(){
     console.log("works");
 });
@@ -34,6 +32,7 @@ if (pageCount > 1) {
     // the first sort, default page is the first one
     sort(1);
 }
+
 
 // (p) is the selected page number.
 function sort(p) {
@@ -98,7 +97,7 @@ function pageButtons(pCount,cur) {
 //     }
 // }
 
-
+//adjust search input width
 function getContentInputFields(focusedElementId) {
     var contentInputfield = document.getElementById(focusedElementId);
     var ValcontentInputField = contentInputfield.value;
@@ -128,19 +127,3 @@ function submitForm(elem) {
         elem.form.submit();
     }
 }
-
-// js for blank fields in table
-// document.addEventListener("DOMContentLoaded", function(){
-//     var theTbl = document.getElementById('myTable');
-//
-//     var y;
-//     for(i = 0; i < theTbl.rows.length; i++){
-//
-//         for(j = 0; j <  theTbl.rows[i].cells.length; j++){
-//             console.log(theTbl.rows[i].cells[j].innerHTML);
-//             if(theTbl.rows[i].cells[j].innerHTML == ""){
-//                 theTbl.rows[i].cells[j].innerHTML = '-';
-//             };
-//         }
-//     }
-// });
